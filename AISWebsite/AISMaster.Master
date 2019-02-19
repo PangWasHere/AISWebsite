@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AISMaster.Master.cs" Inherits="AISWebsite.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="main-styles.css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 343px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div id="header-logo"><img src="/resources/imgs/AIS-logo.jpg" /></div>
+        </header>
+        <nav id="first-nav">
+            <a class="nav-links" href="Default.aspx" id="ais-home-btn"></a>
+            <a href="Programmes.aspx" class="nav-links">Programmes</a>
+            <a href="StudyatAIS.aspx" class="nav-links">Study at AIS</a>
+            <a href="ForStudents.aspx" class="nav-links">For Students</a>
+            <a href="Research.aspx" class="nav-links">Research</a>
+            <a href="AboutAIS.aspx" class="nav-links">About AIS</a>
+            <a href="YourCareer.aspx" class="nav-links">Your Career</a>
+            <asp:TextBox ID="TextBox1" runat="server" Width="159px" placeholder="Search"></asp:TextBox>
+
+            
+        </nav>
+
+        <nav id="second-nav">
+            <a href="#" class="nav-links">Scholarships</a>
+            <a href="#" class="nav-links">News and Events</a>
+            <a href="#" class="nav-links">Agents</a>
+            <a href="#" class="nav-links">Alumni</a>
+            <a href="#" class="nav-links">Success Stories</a>
+            <a href="#" class="nav-links">Contact Us</a>
+        </nav>
+
+
+        <main>
+            <asp:ContentPlaceHolder ID="contentPlaceHolderforMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+
+
+
+        <footer>
+            <hr />
+
+            <table>
+                <tr>
+                    <td class="auto-style1">
+            <a href="http://www.facebook.com/pages/AIS-St-Helens/164270886937731" target="_blank" title="Facebook"><img class="hasRetina" src="resources/imgs/facebook-icon.png" data-retina-src="/assets/Settings/Social/Social-Media-icon-Facebook.png" width="45" height="39" alt="Facebook"></a>
+            <a href="https://twitter.com/AIS_AucklandNZ" target="_blank" title="Twitter"><img class="hasRetina" src="resources/imgs/twitter-icon.png" data-retina-src="/assets/Settings/Social/Social-Media-icon-Twitter.png" width="45" height="39" alt="Twitter"></a>
+            <a href="http://www.linkedin.com/edu/auckland-institute-of-studies-15501" target="_blank" title="LinkedIn"><img class="hasRetina" src="resources/imgs/linkedin-icon.png" data-retina-src="/assets/Settings/Social/Social-Media-icon-LinkedIn.png" width="45" height="39" alt="LinkedIn"></a>
+            <a href="https://www.youtube.com/channel/UCYh0CCY8U0EVNuYQC8_LO_g" target="_blank" title="AIS YouTube Channel"><img class="hasRetina" src="resources/imgs/youtube-icon.png" data-retina-src="/assets/Settings/Social/youtube-icon2.png" width="45" height="39" alt="AIS YouTube Channel"></a>   
+                    </td><td>
+            © <a href="#">Auckland Institute of Studies</a> |
+            <a href="#">Site Map</a> |
+            <a href="#">Privacy</a> | 
+            <a href="#">Policy</a> |
+            <a href="#">Disclaimer</a> | 
+            <a href="#">Submit Feedback</a>
+       </td></tr>
+             </table>
+        </footer>
+    </form>
+</body>
+</html>
